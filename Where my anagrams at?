@@ -1,0 +1,10 @@
+def anagrams(word, words):
+    real = [] #list'll used to add word
+    word = ''.join(sorted(word)) #sorting word
+    for i in range(len(words)): 
+        if word == ''.join(sorted(words[i])): #if sorted word == sorted i element of words
+            real.append(words[i]) #append to real list
+    return real
+    
+anagrams('abba', ['aabb', 'abcd', 'bbaa', 'dada']) -> ['aabb', 'bbaa'])
+anagrams('racer', ['crazer', 'carer', 'racar', 'caers', 'racer']) -> ['carer', 'racer'])
