@@ -1,0 +1,16 @@
+// Given m which should be sum of triplets of n elements (1 + n^3 + (n+1)^3 ...) etc
+def find_nb(m):
+    n = 1
+    vol = 0
+    while vol < m:
+        vol+=n**3
+        if vol==m:
+            return n
+        n=n+1
+    return -1
+
+find_nb(4183059834009), 2022)
+find_nb(24723578342962), -1)
+find_nb(135440716410000), 4824)
+find_nb(40539911473216), 3568)
+find_nb(26825883955641), 3218)
