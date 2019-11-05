@@ -1,0 +1,5 @@
+import string
+def is_pangram(s):
+    return string.ascii_lowercase in ''.join(sorted(set(s.lower())))
+    
+"The quick, brown fox jumps over the lazy dog!"
