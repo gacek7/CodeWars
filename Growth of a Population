@@ -1,0 +1,10 @@
+Simple math :)
+
+def nb_year(p0, percent, aug, p):
+    count=1
+    while p0 + (p0 * percent/100) + aug < p:
+        p0 = p0 + (p0 * percent/100) + aug
+        count+=1
+    return count
+    
+(1500, 5, 100, 5000) -> 15
