@@ -1,0 +1,24 @@
+Checking if the word is Isogram
+
+def is_isogram(string):
+    string = string.lower()
+    string = ''.join(sorted(string))
+    for i in range(len(string)-1):
+        if string[i] == string[i+1]:
+            return False
+        else:
+            i+=1
+    return True
+    
+    
+ Testing for zrqzvmyybzvhthplzzsnhvmg
+ Testing for lopwvzyrbtshnogquabdbh
+ Testing for oizpzefrncav
+ Testing for lbzvrusmsto
+ Testing for enixvh
+ Testing for fifcsczhiiltcsvrzwlppohpvuajgqazohagvmvvkjk
+ Testing for rfykdysbinpvcgsqdgievpklluxtgczwoonctfu
+ Testing for kxijioqfy
+ Testing for olymxdgqajpoztlnresoso
+ Testing for urxirzzlvt
+ Testing for ontbgyyiqazrnpjbzfyf
