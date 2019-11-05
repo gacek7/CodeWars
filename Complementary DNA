@@ -1,0 +1,12 @@
+def DNA_strand(dna):
+    output = ''
+    for i in range(len(dna)):
+        if dna[i] == "A":
+            output+="T"
+        elif dna[i] == "T":
+            output+="A"
+        elif dna[i] == "C":
+            output+="G"
+        elif dna[i] == "G":
+            output+="C"
+    return output
