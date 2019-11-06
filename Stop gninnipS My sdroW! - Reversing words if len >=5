@@ -1,0 +1,6 @@
+def spin_words(sentence):
+    split = sentence.split()
+    for i in range(len(split)):
+        if len(split[i]) >=5:
+            split[i] = ''.join(reversed(split[i]))
+    return ' '.join(split)
