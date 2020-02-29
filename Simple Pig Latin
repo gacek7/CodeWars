@@ -1,0 +1,10 @@
+def pig_it(text):
+    text = text.split()
+    x = []
+    for i in range(len(text)):
+        if(text[i]=="!" or text[i]=="?"):
+            x.append(text[i])
+        else:
+            y=text[i][1:]+text[i][0]+"ay"
+            x.append(y)
+    return " ".join(x)
