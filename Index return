@@ -1,0 +1,10 @@
+def search(target, List):
+    list.sort(List)
+    result = []
+    for i in range(len(List)):
+        if(List[i] == target):
+            result.append(i)
+    if(target not in List):
+        print([-1,-1])
+    else:
+        print([result[0],result[-1]])
