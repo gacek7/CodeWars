@@ -1,0 +1,15 @@
+Estimating π with Monte Carlo Method
+
+
+import random
+def Pi(points):
+    i=0
+    points_in_circle=0
+    while i <= points:
+        if(random.uniform(-1,1)**2 + random.uniform(-1,1)**2 < 1):
+            points_in_circle+=1
+        i+=1
+    print(4*points_in_circle/points)
+Pi(10)
+
+
