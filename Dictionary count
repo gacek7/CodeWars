@@ -7,9 +7,14 @@ lst1 = [
 ]
 
 
-lst1 = [
-  { 'firstName': 'Noah', 'lastName': 'M.', 'country': 'Switzerland', 'continent': 'Europe', 'age': 19, 'language': 'JavaScript' },
-  { 'firstName': 'Maia', 'lastName': 'S.', 'country': 'Tahiti', 'continent': 'Oceania', 'age': 28, 'language': 'JavaScript' },
-  { 'firstName': 'Shufen', 'lastName': 'L.', 'country': 'Taiwan', 'continent': 'Asia', 'age': 35, 'language': 'HTML' },
-  { 'firstName': 'Sumayah', 'lastName': 'M.', 'country': 'Tajikistan', 'continent': 'Asia', 'age': 30, 'language': 'CSS' }
-]
+def count(lst):
+    sum=0
+    for i in range(len(lst)):
+        if lst[i]["continent"] == 'Europe' and lst[i]['language'] == 'JavaScript':
+                sum=sum+1
+    return sum
+
+or 
+
+def count(lst):
+    return sum(i['continent'] == 'Europe' and i['language'] == 'JavaScript' for i in lst)
