@@ -1,0 +1,18 @@
+Your task is to return one of the following strings:
+
+< firstName here >, < country here > of the first Python developer who has signed up; or
+There will be no Python developers if no Python developer has signed up.
+For example, given the following input array:
+list1 = [
+  { "first_name": "Mark", "last_name": "G.", "country": "Scotland", "continent": "Europe", "age": 22, "language": "JavaScript" },
+  { "first_name": "Victoria", "last_name": "T.", "country": "Puerto Rico", "continent": "Americas", "age": 30, "language": "Python" },
+  { "first_name": "Emma", "last_name": "B.", "country": "Norway", "continent": "Europe", "age": 19, "language": "Clojure" }
+]
+your function should return Victoria, Puerto Rico.
+
+
+def get_first_python(users):
+    for i in range(len(users)):
+        if users[i]['language'] == 'Python':
+            return f"{users[i]['first_name']}, {users[i]['country']}"
+    return "There will be no Python developers"
