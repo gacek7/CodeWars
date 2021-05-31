@@ -1,0 +1,19 @@
+for example, when given size is 3:
+
+1 2 3
+2 4 6
+3 6 9
+for given example, the return value should be: [[1,2,3],[2,4,6],[3,6,9]]
+
+
+import numpy as np
+def multiplication_table(size):
+    arr = []
+    for i in range(size):
+        for j in range(size):
+            arr.append((i+1)*(j+1))
+    two_split = np.array_split(arr, size)
+    test =  []
+    for array in two_split:
+        test.append(list(array))
+    return test
